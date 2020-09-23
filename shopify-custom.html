@@ -46,8 +46,8 @@
 	</div>
 	<div class="ksp2" style="display: flex;">
 		<div class="ksp2" style="order: 0;"><img
-				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app_1024x1024.jpg?v=1600797739"
-				alt="" width="" height="" /></div>
+				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app.jpg?v=1600797739" />
+		</div>
 		<div class="ksp2" style="order: 1;">
 			<div>
 				<p><span style="font-size: large; color: #000000;">View and Manage Remotely </span></p>
@@ -67,7 +67,10 @@
 						<div class="shadow"></div>
 					</div>
 					<div class="inset"><img
-							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notification-laview-app-default.png?v=1600820342" />
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multi-view-laview-app-default.png?v=1600828204"
+							alt="" width="" height="" /> <img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multi-view-laview-app-active-e.png?v=1600828204"
+							alt="" width="" height="" />
 					</div>
 				</div>
 				<div class="radial-progress" style="order: 1;">
@@ -82,7 +85,26 @@
 						<div class="shadow"></div>
 					</div>
 					<div class="inset"><img
-							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/instant-playback-laview-app-default.png?v=1600822604" />
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/motion-log-laview-app-default.png?v=1600828204" />
+						<img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/motion-log-laview-app-active-e.png?v=1600828204" />
+					</div>
+				</div>
+				<div class="radial-progress" style="order: 2;">
+					<div class="circle">
+						<div class="mask full">
+							<div class="fill"></div>
+						</div>
+						<div class="mask half">
+							<div class="fill"></div>
+							<div class="fill fix"></div>
+						</div>
+						<div class="shadow"></div>
+					</div>
+					<div class="inset"><img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notification-laview-app-default.png?v=1600820342" />
+						<img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notification-laview-app-active-e.png?v=1600820342" />
 					</div>
 				</div>
 			</div>
@@ -99,7 +121,9 @@
 						<div class="shadow"></div>
 					</div>
 					<div class="inset"><img
-							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/pan-tilt-laview-app-default.png?v=1600828204" />
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/instant-playback-laview-app-default.png?v=1600822604" />
+						<img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/instant-playback-laview-app-active-e.png?v=1600822604" />
 					</div>
 				</div>
 				<div class="radial-progress" style="order: 1;">
@@ -114,7 +138,10 @@
 						<div class="shadow"></div>
 					</div>
 					<div class="inset"><img
-							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/motion-log-laview-app-default.png?v=1600828204" />
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/pan-tilt-laview-app-default.png?v=1600828204" />
+						<img
+							src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/pan-tilt-laview-app-active-e.png?v=1600828204" />
+
 					</div>
 				</div>
 			</div>
@@ -170,6 +197,9 @@
 		border-radius: 50%;
 		box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 	}
+	.inset img:nth-child(2) {
+		display: none;
+	}
 </style>
 <script>
 	var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
@@ -179,19 +209,21 @@
 		var counter = 0;
 		var index = 0;
 		window.randomize = function () {
-			 index = counter % 4;
+			index = counter % 5;
 			//	function circleProgress(counter) {
 			var rotation = Math.floor(1 * 180);
 			var fill_rotation = rotation;
 			var fix_rotation = rotation * 2;
 			//$('.circle .fill, .circle .mask.full').css('transform-origin', 'center center');
 			//$('.circle .fill.fix').css('transform-origin', 'center center');
+			$('.inset img:nth-child(1)').eq(index).css('display','none');
+			$('.inset img:nth-child(2)').eq(index).css('display','block');
 			for (i in transform_styles) {
 
-				$('.circle .fill, .circle .mask.full').filter(function(j){return (j<(4*index+4) && (j>=4*index));}).css('transition', transform_styles[i] + ' 1s');
-				console.log($('.circle .fill, .circle .mask.full').filter(function(j){return (j<(4*index+4) && (j>=4*index));}));
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css('transition', transform_styles[i] + ' 1s');
+				console.log($('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }));
 				$('.circle .fill.fix').eq(index).css('transition', transform_styles[i] + ' 1s');
-				$('.circle .fill, .circle .mask.full').filter(function(j){return (j<(4*index+4) && (j>=4*index));}).css(transform_styles[i], 'rotate(' + fill_rotation + 'deg)');
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css(transform_styles[i], 'rotate(' + fill_rotation + 'deg)');
 				//	$('.circle .fill.fix').eq(3).css(transform_styles[i], 'rotate(' + fix_rotation + 'deg)');
 			}
 			counter++;
@@ -207,16 +239,17 @@
 		setInterval(function () {
 			for (i in transform_styles) {
 
-				console.log('hide',index);
+				console.log('hide', index);
 
-				$('.circle .fill, .circle .mask.full').filter(function(j){return (j<(4*index+4) && (j>=4*index));}).css('transition', transform_styles[i] + ' .1s');
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css('transition', transform_styles[i] + ' .1s');
 				$('.circle .fill.fix').eq(index).css('transition', transform_styles[i] + ' .1s');
 
-				$('.circle .fill, .circle .mask.full').filter(function(j){return (j<(4*index+4) && (j>=4*index));}).css(transform_styles[i], 'none');
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css(transform_styles[i], 'none');
 				$('.circle .fill.fix').eq(index).css(transform_styles[i], 'none');
 
 			}
-
+			$('.inset img:nth-child(2)').eq(index).css('display','none');
+			$('.inset img:nth-child(1)').eq(index).css('display','block');
 			setTimeout(window.randomize, 100);
 		}, 3000);
 		// setInterval(window.randomize,1000);
