@@ -43,19 +43,19 @@
 	</div>
 	<div class="ksp2 app-images" style="display: flex;">
 		<div style="order: 0;">
-			<div class="image" >
+			<div class="image">
 				<img
 					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app.jpg?v=1600797739" />
 			</div>
-			<div class="image" >
+			<div class="image">
 				<img
 					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/motion-capture-log-interface-laview-app.jpg?v=1600903987" />
 			</div>
-			<div class="image" >
+			<div class="image">
 				<img
 					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notification-view-interface-laview-app.jpg?v=1600903987" />
 			</div>
-			<div class="image" >
+			<div class="image">
 				<img
 					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/instant-playback-interface-laview-app.jpg?v=1600903987" />
 			</div>
@@ -211,7 +211,7 @@
 				your home security camera footage is of the highest importance. Safely store and record with either
 				MicroSD or our low-cost Cloud Service.</span></p>
 	</div>
-	<div class="ksp2" style="display:flex;">
+	<div class="ksp2 cloud-text" style="display:flex;">
 		<div style="order:0;width: 50%;">
 			<p class='title' style="font-size: 25px; color: #000000;"><span
 					style="font-size: large; color: #000000;">MicroSD</span></p>
@@ -222,17 +222,20 @@
 			<p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: gray;">Cloud
 					Storage</span></p>
 			<p style="font-size: 20px; color: gray; text-align: center;"><span style="font-size: medium;">Our optional,
-					low-cost cloud service expands your data capacity and stores your all-important footage offsite,
+					low-cost <a href="https://www.laviewusa.com/pages/cloud-services" style="color:blue;text-decoration: underline;">cloud service</a> expands your
+					data capacity and stores your all-important footage offsite,
 					with high encryption for your safety.</span></p>
 		</div>
 	</div>
-	<div class="ksp2" style="display:flex;">
-		<div style="order:0"><img
-				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/microSD-storage-laview-smart-home-camera-f1.jpg?v=1600903988"
-				alt="" width="2048x2048" height="2048x2048" /></div>
-		<!-- <div style="order:1"><img
-				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1-on-wall-near-flower-in-living-room.jpg?v=1600903987"
-				alt="" width="2048x2048" height="2048x2048" /></div> -->
+	<div class="ksp2 cloud-images" style="display:flex;">
+		<div class="cloud-image">
+			<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/microSD-storage-laview-smart-home-camera-f1.jpg?v=1600903988"
+				alt="" width="2048x2048" height="2048x2048" />
+		</div>
+		<div class="cloud-image">
+			<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/cloud-storage-laview-smart-home-f1.jpg?v=1600974697"
+				alt="" width="2048x2048" height="2048x2048" />
+		</div>
 	</div>
 </div>
 <style>
@@ -297,11 +300,11 @@
 		display: block;
 	}
 
-	.app-images .image{
+	.app-images .image {
 		display: none;
 	}
 
-	.app-images .image:nth-child(1){
+	.app-images .image:nth-child(1) {
 		display: block;
 	}
 
@@ -312,11 +315,21 @@
 
 	}
 
-	@media screen and (min-width:767px) {
+	@media screen and (min-width:870px) {
 		.app-properties {
-			width: 50%;
+			width: 100%;
+		}
+		.app-properties .description{
+			height: 20%;
 		}
 	}
+	.cloud-images  .cloud-image{
+		display: none;
+	}
+	.cloud-images .cloud-image:nth-child(1){
+		display: block;
+	}
+
 </style>
 <script>
 	var transform_styles = ['-webkit-transform', '-ms-transform', 'transform'];
@@ -371,7 +384,7 @@
 
 			$('.app-images .image').eq(index).css('display', 'none');
 			$('.app-images .image').eq(index < 3 ? (index + 1) : 0).css('display', 'block');
-			
+
 			$('.inset img:nth-child(2)').eq(index).css('display', 'none');
 			$('.inset img:nth-child(1)').eq(index).css('display', 'block');
 			setTimeout(window.randomize, 10);
@@ -395,7 +408,7 @@
 
 			$('.app-images .image').eq(index).css('display', 'none');
 			$('.app-images .image').eq(counter).css('display', 'block');
-			
+
 			$('.app-properties .description').eq(index).css('display', 'none');
 			$('.app-properties .description').eq(counter).css('display', 'block');
 
@@ -403,7 +416,9 @@
 			$('.inset img:nth-child(1)').eq(index).css('display', 'block');
 			setTimeout(window.randomize, 10);
 
-		})
+		});
+
+		$('.cloud-text').hover(function(){});
 		// setInterval(window.randomize,1000);
 
 		// }, 2000);
