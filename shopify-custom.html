@@ -26,7 +26,8 @@
 		<p class='title' style="font-size: large; color: #000000;"><span style="font-size: large; color: #000000;">View
 				All the
 				Details, Day and Night </span></p>
-		<p style="font-size: medium; color: #000000;text-align: center;"><span style="font-size: medium;">The camera boasts stunning HD
+		<p style="font-size: medium; color: #000000;text-align: center;"><span style="font-size: medium;">The camera
+				boasts stunning HD
 				1080P resolution that will <br />allow you to see all the fine details in your field of view.</span></p>
 	</div>
 	<div class="ksp2"><br /> <img
@@ -35,7 +36,8 @@
 	<div class="ksp2">
 		<p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: #000000;">One
 				Easy App – Tons of Convenient Features</span></p>
-		<p style="font-size: 20px; color: #000000; text-align: center;"><span style="font-size: medium;"> The free LaView
+		<p style="font-size: 20px; color: #000000; text-align: center;"><span style="font-size: medium;"> The free
+				LaView
 				mobile app brings your home footage right to your fingertips with convenient features and customizable
 				settings for your perfect home security experience. </span></p>
 	</div>
@@ -183,15 +185,27 @@
 				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1-on-wall-near-flower-in-living-room.jpg?v=1600903987"
 				alt="" width="2048x2048" height="2048x2048" /></div>
 	</div>
-	<div class="ksp2">
-		<p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: #000000;">Two Convenient Storage Options</span></p>
-		<p style="font-size: 20px; color: #000000; text-align: left;"><span style="font-size: medium;">Safe storage of your home security camera footage is of the highest importance. Safely store and record with either MicroSD or our low-cost Cloud Service.</span></p>
+	<div class="ksp2" style="background: #f5f5f5;">
+		<p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: #000000;">Two
+				Convenient Storage Options</span></p>
+		<p style="font-size: 20px; color: #000000; text-align: left;"><span style="font-size: medium;">Safe storage of
+				your home security camera footage is of the highest importance. Safely store and record with either
+				MicroSD or our low-cost Cloud Service.</span></p>
 	</div>
 	<div class="ksp2" style="display:flex;">
-		<div style="order:0;width: 50%;"><p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: #000000;">MicroSD</span></p>
-			<p style="font-size: 20px; color: #000000; text-align: center;"><span style="font-size: medium;">Onboard microSD slot supports up to 128GB for simple and accessible storage.</span></p></div>
-		<div style="order:1;width: 50%;"><p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: gray;">Cloud Storage</span></p>
-			<p style="font-size: 20px; color: gray; text-align: center;"><span style="font-size: medium;">Our optional, low-cost cloud service expands your data capacity and stores your all-important footage offsite, with high encryption for your safety.</span></p></div>
+		<div style="order:0;width: 50%;">
+			<p class='title' style="font-size: 25px; color: #000000;"><span
+					style="font-size: large; color: #000000;">MicroSD</span></p>
+			<p style="font-size: 20px; color: #000000; text-align: center;"><span style="font-size: medium;">Onboard
+					microSD slot supports up to 128GB for simple and accessible storage.</span></p>
+		</div>
+		<div style="order:1;width: 50%;">
+			<p class='title' style="font-size: 25px; color: #000000;"><span style="font-size: large; color: gray;">Cloud
+					Storage</span></p>
+			<p style="font-size: 20px; color: gray; text-align: center;"><span style="font-size: medium;">Our optional,
+					low-cost cloud service expands your data capacity and stores your all-important footage offsite,
+					with high encryption for your safety.</span></p>
+		</div>
 	</div>
 	<div class="ksp2" style="display:flex;">
 		<div style="order:0"><img
@@ -227,9 +241,9 @@
 	.radial-progress .circle .mask,
 	.radial-progress .circle .fill {
 		-webkit-backface-visibility: hidden;
-		transition: -webkit-transform 1s;
-		transition: -ms-transform 1s;
-		transition: transform 1s;
+		transition: -webkit-transform 2.5s;
+		transition: -ms-transform 2.5s;
+		transition: transform 2.5s;
 	}
 
 	.radial-progress .circle .mask {
@@ -297,9 +311,9 @@
 			$('.inset img:nth-child(2)').eq(index).css('display', 'block');
 			for (i in transform_styles) {
 
-				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css('transition', transform_styles[i] + ' 1s');
-				console.log($('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }));
-				$('.circle .fill.fix').eq(index).css('transition', transform_styles[i] + ' 1s');
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css('transition', transform_styles[i] + ' 2.5s');
+				//console.log($('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }));
+				$('.circle .fill.fix').eq(index).css('transition', transform_styles[i] + ' 2.5s');
 				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css(transform_styles[i], 'rotate(' + fill_rotation + 'deg)');
 				//	$('.circle .fill.fix').eq(3).css(transform_styles[i], 'rotate(' + fix_rotation + 'deg)');
 			}
@@ -312,8 +326,8 @@
 		// 	//	$('.circle .fill, .circle .mask.full').css(transform_styles[i], 'rotate(' + -100 + 'deg)');
 		// 		//$('.circle .fill.fix').css(transform_styles[i], 'rotate(' + -100 + 'deg)');
 		// 	}
-
-		setInterval(function () {
+		setTimeout(window.randomize, 10);
+		var appSectionInterval = setInterval(function () {
 			for (i in transform_styles) {
 
 				console.log('hide', index);
@@ -331,7 +345,32 @@
 			$('.inset img:nth-child(2)').eq(index).css('display', 'none');
 			$('.inset img:nth-child(1)').eq(index).css('display', 'block');
 			setTimeout(window.randomize, 10);
-		}, 3000);
+		}, 3500);
+
+		$('.inset').click(function () {
+			clearInterval(appSectionInterval);
+			for (i in transform_styles) {
+
+				console.log('hide', index);
+
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css('transition', transform_styles[i] + ' .1s');
+				$('.circle .fill.fix').eq(index).css('transition', transform_styles[i] + ' .1s');
+
+				$('.circle .fill, .circle .mask.full').filter(function (j) { return (j < (4 * index + 4) && (j >= 4 * index)); }).css(transform_styles[i], 'none');
+				$('.circle .fill.fix').eq(index).css(transform_styles[i], 'none');
+
+			}
+			
+			counter = $('.inset').index(this);
+
+			$('.app-properties .description').eq(index).css('display', 'none');
+			$('.app-properties .description').eq(counter).css('display', 'block');
+
+			$('.inset img:nth-child(2)').eq(index).css('display', 'none');
+			$('.inset img:nth-child(1)').eq(index).css('display', 'block');
+			setTimeout(window.randomize, 10);
+
+		})
 		// setInterval(window.randomize,1000);
 
 		// }, 2000);
