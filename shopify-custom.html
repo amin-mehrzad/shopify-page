@@ -41,9 +41,28 @@
 				mobile app brings your home footage right to your fingertips with convenient features and customizable
 				settings for your perfect home security experience. </span></p>
 	</div>
-	<div class="ksp2" style="display: flex;">
-		<div class="ksp2" style="order: 0;"><img
-				src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app.jpg?v=1600797739" />
+	<div class="ksp2 app-images" style="display: flex;">
+		<div style="order: 0;">
+			<div class="image" >
+				<img
+					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app.jpg?v=1600797739" />
+			</div>
+			<div class="image" >
+				<img
+					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/motion-capture-log-interface-laview-app.jpg?v=1600903987" />
+			</div>
+			<div class="image" >
+				<img
+					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notification-view-interface-laview-app.jpg?v=1600903987" />
+			</div>
+			<div class="image" >
+				<img
+					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/instant-playback-interface-laview-app.jpg?v=1600903987" />
+			</div>
+			<!-- <div class="image" >
+				<img
+					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/multiple-camera-view-interface-laview-app.jpg?v=1600797739" />
+			</div> -->
 		</div>
 		<div class="ksp2 app-properties" style="order: 1;">
 			<div class="description">
@@ -278,6 +297,14 @@
 		display: block;
 	}
 
+	.app-images .image{
+		display: none;
+	}
+
+	.app-images .image:nth-child(1){
+		display: block;
+	}
+
 	.title {
 		text-align: center;
 		font-weight: bold;
@@ -342,6 +369,9 @@
 			$('.app-properties .description').eq(index).css('display', 'none');
 			$('.app-properties .description').eq(index < 3 ? (index + 1) : 0).css('display', 'block');
 
+			$('.app-images .image').eq(index).css('display', 'none');
+			$('.app-images .image').eq(index < 3 ? (index + 1) : 0).css('display', 'block');
+			
 			$('.inset img:nth-child(2)').eq(index).css('display', 'none');
 			$('.inset img:nth-child(1)').eq(index).css('display', 'block');
 			setTimeout(window.randomize, 10);
@@ -360,9 +390,12 @@
 				$('.circle .fill.fix').eq(index).css(transform_styles[i], 'none');
 
 			}
-			
+
 			counter = $('.inset').index(this);
 
+			$('.app-images .image').eq(index).css('display', 'none');
+			$('.app-images .image').eq(counter).css('display', 'block');
+			
 			$('.app-properties .description').eq(index).css('display', 'none');
 			$('.app-properties .description').eq(counter).css('display', 'block');
 
