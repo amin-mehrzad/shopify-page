@@ -1,6 +1,6 @@
-<div class="ksp2"><br />
-	<div class="ksp2" style="text-align: start;">
-		<div class="banner-description desktop-view" >
+<div class="ksp2 product-page"><br />
+	<div class="ksp2 banner-section" style="text-align: start;">
+		<div class="banner-description desktop-view">
 			<p style="font-size: large; color: #000000; text-align: left;"><b>An Extra Set of Eyes Around the House</b>
 			</p>
 			<p style="font-size: medium; color: #000000; text-align: left;"><span style="font-size: medium;">The F1
@@ -11,9 +11,42 @@
 		<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1_2048x2048.jpg?v=1600728331" alt=""
 			width="" height="" />
 	</div>
-	<div class="ksp2" style="text-align: start;">
-		<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/seperator-gery-f8f8f8.png?v=1590854280" alt=""
-			width="" height="" />
+	<div class="ksp2 icons-section" style="text-align: start;">
+		<div>
+			<div>
+				<figure>
+					<img
+						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/high-definition-icon.png?v=1601339352">
+					<figcaption>1080P</figcaption>
+				</figure>
+				<figure>
+					<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/wifi-icon.png?v=1601339353">
+					<figcaption>Wifi</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/two-way-audio-icon.png?v=1601339353">
+					<figcaption>2 Way Audio</figcaption>
+				</figure>
+				</div>
+			<div>
+				<figure>
+					<img
+						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/microsd-icon-laview.png?v=1601339352">
+					<figcaption>MicroSD Slot</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/cloud-storage-icon-laview.png?v=1601339353">
+					<figcaption>Cloud Storage</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/push-notiication-icon.png?v=1601339353">
+					<figcaption>Mobile Push<br>notifications</figcaption>
+				</figure>
+			</div>
+		</div>
 		<div class="kspt mobile-view" style="background-color: rgba(255, 255, 255, 0.6);">
 			<p style="font-size: large; color: #000000; text-align: left;"><b>An Extra Set of Eyes Around the House</b>
 			</p>
@@ -21,6 +54,8 @@
 					camera is the ideal indoor WiFi security<br />camera for looking in on the kids, furry friends,
 					the<br />nanny and much more!</span></p>
 		</div>
+		<!-- <img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/seperator-gery-f8f8f8.png?v=1590854280" alt=""
+		width="" height="" /> -->
 	</div>
 	<div>
 		<p class="title">Stay Connected with Two-Way Audio</p>
@@ -334,6 +369,16 @@
 		}
 	}
 
+	@media screen and (max-width:870px) {
+		.mobile-view {
+			display: block;
+		}
+
+		.desktop-view {
+			display: none;
+		}
+	}
+
 	.cloud-images .cloud-image {
 		display: none;
 	}
@@ -348,6 +393,25 @@
 
 	.cloud-text div:nth-child(1) {
 		color: black;
+	}
+
+	.icons-section {
+		background: url('https://cdn.shopify.com/s/files/1/0385/8851/4444/files/seperator-gery-f8f8f8.png?v=1590854280') no-repeat center fixed;
+		background-size: cover;
+	}
+
+	 .icons-section div div figure{
+		display: inline-grid; 
+		text-align: justify;
+		margin:5px;
+	}
+
+figure img{
+	width: 77px;
+}
+	figure figcaption{
+		text-align: center;
+		font-size: x-small;
 	}
 </style>
 <script>
