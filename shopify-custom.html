@@ -45,8 +45,8 @@
 				</figure>
 			</div>
 		</div>
-		<div class="desktop-view">
-			<div style="display: flex; justify-content: space-around;">
+		<div class="desktop-view" style="margin-top: -10px;">
+			<div style="display: flex; justify-content: space-around;min-height: 222px;">
 				<figure><img
 						src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/high-definition-icon.png?v=1601339352" />
 					<figcaption>1080P</figcaption>
@@ -73,29 +73,29 @@
 			</div>
 		</div>
 	</div>
-	<div>
+	<section>
 		<p class="title">Stay Connected with Two-Way Audio</p>
-		<p>The F1 Indoor WiFi Camera keeps you connected with anyone in the area via its built-in mic and speaker. Speak
+		<p class="section-text">The F1 Indoor WiFi Camera keeps you connected with anyone in the area via its built-in mic and speaker. Speak
 			and listen via the free mobile app to say hi to the kids and be with the family even when you’re away.</p>
-	</div>
-	<div class="ksp2"><img
+	<img
 			src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/two-way-audio-laview-f1-kitchen-wife-talking-to-husband_2048x2048.jpg?v=1600765868"
-			alt="" width="2048x2048" height="2048x2048" /></div>
-	<div class="kspt">
-		<p class="title" style="color: #000000;"><span style="color: #000000;">View All the Details, Day and Night
-			</span></p>
-		<p style="color: #000000; text-align: center;"><span>The camera boasts stunning HD 1080P resolution that will
-				<br class="desktop-view" />allow you to see all the fine details in your field of view.</span></p>
-	</div>
-	<div class="ksp2"><br /> <img
-			src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1-clarity-day-and_-night_2048x2048.jpg?v=1600792767"
-			alt="" width="2048x2048" height="2048x2048" /></div>
-	<div class="ksp2">
-		<p class="title" style="color: #000000;"><span style="color: #000000;">One Easy App</span></p>
-		<p style="color: #000000; text-align: center;"><span> The free LaView mobile app brings your home footage right
+			alt="" width="2048x2048" height="2048x2048" />
+		</section>
+	<section class="kspt" style="background-color: whitesmoke;">
+		<p class="title" style="color: #000000;"><span style="color: #000000;">Exceptional Clarity – All Day and
+				Night</span></p>
+		<p style="color: #000000;" class="section-text"><span>Experience full HD 1080p clarity in both livestream and playback footage. Plus,
+				IR night vision up to 33 feet keeps you covered in the dark – perfect for the baby room or anywhere you
+				need that extra set of eyes.</span></p>
+		<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1-clarity-day-and_-night_2048x2048.jpg?v=1600792767"
+			alt="" width="2048x2048" height="2048x2048" />
+		</section>
+	<section class="ksp2">
+		<p class="title" style="color: #000000;"><span>One Easy App</span></p>
+		<p style="color: #000000;"><span> The free LaView mobile app brings your home footage right
 				to your fingertips with convenient features and customizable settings for your perfect home security
 				experience. </span></p>
-	</div>
+	</section>
 	<div class="desktop-view">
 		<div class="ksp2 app-images" style="display: flex;">
 			<div style="order: 0;">
@@ -319,9 +319,9 @@
 				</div>-->
 		</div>
 	</div>
-	<div class="ksp2 " style="background-color: whitesmoke; padding:35px; padding-bottom: 90px;">
+	<section class="ksp2 " style="background-color: whitesmoke;">
 		<p class="title" style="color: #000000;"><span style="color: #000000;">Find Your Perfect View</span></p>
-		<p style="color: #000000; text-align: left;"><span>The F1 indoor Wifi camera allows you to place it on any flat
+		<p style="color: #000000; text-align: left;" class="section-text"><span>The F1 indoor Wifi camera allows you to place it on any flat
 				surface around the house like bookshelves, mantels, or desk. Or you can use the included 3M adhesive pad
 				to mount the camera on any vertical surface to capture the perfect angle.</span></p>
 
@@ -335,15 +335,15 @@
 					src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/laview-f1-on-wall-near-flower-in-living-room.jpg?v=1600903987"
 					alt="" width="2048x2048" height="2048x2048" /></div>
 		</div>
-	</div>
+	</section>
 
-	<div class="ksp2" style=" padding: 35px;margin: 90px 0px 45px;">
+	<section class="ksp2" >
 		<p class="title" style="color: #000000; "><span style="color: #000000;">Two Convenient Storage Options</span>
 		</p>
 		<p style="color: #000000; text-align: left;"><span>Safe storage of your home security camera footage is of the
 				highest importance. Safely store and record with either MicroSD or our low-cost Cloud Service.</span>
 		</p>
-	</div>
+	</section>
 	<div class="desktop-view">
 		<div class="ksp2 cloud-text" style="display: flex;">
 			<div style="order: 0; width: 50%;">
@@ -505,6 +505,22 @@
 		.title {
 			font-size: 25px;
 		}
+
+		.description {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		section {
+			margin: 85px 0 45px;
+			padding: 35px;
+		}
+		.section-text{
+			padding:30px 0 50px;
+		}
+		figure{
+			margin-top: 40px !important;
+		}
 	}
 
 
@@ -588,10 +604,12 @@
 			width: 40px;
 		}
 
+
 		figure figcaption {
 			text-align: center;
 			font-size: x-small;
 		}
+
 	}
 
 	a {
