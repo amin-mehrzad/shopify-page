@@ -727,6 +727,14 @@
 			$('.cloud-text div').css('color', 'rgba(0,0,0,.25)');
 			$('.cloud-text div').eq(cloudIndex).css('color', 'black');
 		});
+
+		$('.cloud-text div').hover(function () {
+			cloudIndex = $('.cloud-text div').index(this);
+			$('.cloud-images .cloud-image').css('display', 'none');
+			$('.cloud-images .cloud-image').eq(cloudIndex).css('display', 'block');
+			$('.cloud-text div').css('color', 'rgba(0,0,0,.25)');
+			$('.cloud-text div').eq(cloudIndex).css('color', 'black');
+		});
 		// setInterval(window.randomize,1000);
 
 		// }, 2000);
