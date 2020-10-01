@@ -1,0 +1,50 @@
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 140px; margin-top: -120px;">
+<p style="font-size: 12px; color: #666666; text-align: center;"><span style="font-size: medium;">LaView proudly introduces its newest addition to the Wi-Fi range: The F1 WiFi Security Camera. It is the<br>perfect choice to start or expand your DIY security system. With easy installation, seamless Wi-Fi connectivity<br> and stunning HD 1080P resolution, the camera exemplifies LaView’s high standard of quality and versatility. </span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/seperator-gery-f8f8f8.png?v=1590854280" alt="" width="" height="">
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 340px; left: 180px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: left;"><span style="font-size: large; color: #00bcdd;">Connect Seamlessly </span></p>
+<p style="font-size: 20px; color: #000000; text-align: left;"><span style="font-size: medium;">Connecting your camera via Wi-Fi allows you to place it <br>anywhere in your property to ensure you get the coverage you need. </span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_7_f1.jpg?v=1591009630" alt="" width="" height="">
+</div>
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 340px; right: 200px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: right;"><span style="font-size: large; color: #00bcdd;">View All the Details, Day and Night </span></p>
+<p style="font-size: 20px; color: #000000; text-align: right;"><span style="font-size: medium;">The camera boasts stunning HD 1080P resolution that will <br>allow you to see all the fine details in your field of view.</span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_1_fade.png?v=1590851413" alt="1080p high resolution" width="" height="">
+</div>
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 340px; left: 180px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: left;"><span style="font-size: large; color: #00bcdd;">Place the Camera Anywhere with Ease</span></p>
+<p style="font-size: 20px; color: #000000; text-align: left;"><span style="font-size: medium;">Easily mount the F1 wherever you need as its<br>diminutive size makes it perfectly portable. </span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_6_f1.jpg?v=1591010366" alt="" width="" height="">
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 300px; right: 210px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: right;"><span style="font-size: large; color: #00bcdd;">Gain Complete Awareness to Your Camera’s Surroundings </span></p>
+<p style="font-size: 20px; color: #000000; text-align: right;"><span style="font-size: medium;">Receive push notifications to your mobile device any <br>time motion is detected in your camera’s field of view. </span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_4_1.png?v=1590852654" alt="push notificaitons" width="" height="">
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 340px; left: 180px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: left;"><span style="font-size: large; color: #00bcdd;">Stay Secure with Cloud Storage </span></p>
+<p style="font-size: 20px; color: #000000; text-align: left;"><span style="font-size: medium;">The cloud service is 100% U.S. based with advanced bank-grade <br> 128-bit encryption to ensure your safety and privacy.</span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_2_white_f1.jpg?v=1591009692" alt="" width="" height="">
+<div class="ksp2">
+<div class="kspt" style="position: relative; top: 320px; right: 200px; margin-top: -190px;">
+<p style="font-size: 25px; color: #000000; text-align: right;"><span style="font-size: large; color: #00bcdd;">View and Manage Remotely </span></p>
+<p style="font-size: 20px; color: #000000; text-align: right;"><span style="font-size: medium;">View your live footage, review your recordings and manage your<br>camera settings by downloading the LaView app.</span></p>
+</div>
+<img src="https://cdn.shopify.com/s/files/1/0385/8851/4444/files/Module_8_f1.jpg?v=1590853068" alt="mobile app" width="" height="">
+</div>
+<div class="ksp2"></div>
+<div class="ksp2"></div>
+</div>
+</div>
+</div>
+</div>
